@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
-import example from './example/reducer';
+import facing from './facing/reducer';
+import walk from './walk/reducer';
 
-const reducers = combineReducers({ example });
+const reducers = combineReducers({ facing, walk });
 
 export default reducers;
