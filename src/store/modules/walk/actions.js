@@ -1,22 +1,15 @@
 import types from './types';
 
-export function setWalkPositionUp() {
+export function setWalkPositionY(y) {
   return {
-    type: types.walkUp,
+    type: types.walkY,
+    payload: { y },
   };
 }
-export function setWalkPositionDown() {
+
+export function setWalkPositionX(x) {
   return {
-    type: types.walkDown,
-  };
-}
-export function setWalkPositionLeft() {
-  return {
-    type: types.walkLeft,
-  };
-}
-export function setWalkPositionRight() {
-  return {
-    type: types.walkRight,
+    type: types.walkX,
+    payload: { x },
   };
 }

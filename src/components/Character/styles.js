@@ -12,6 +12,5 @@ export const Container = styled.div`
   position: absolute;
   top: ${props => props.position.y * WALK_SPACES}px;
   left: ${props => props.position.x * WALK_SPACES}px;
-  transition: top 250ms ease;
-  transition: left 250ms ease;
+  z-index: 10;
 `;
