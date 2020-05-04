@@ -3,7 +3,7 @@ import produce from 'immer';
 import types from './types';
 
 const INITIAL_STATE = {
-  position: { x: 1, y: 1 },
+  position: { x: 8, y: 9 },
 };
 
 export default function walk(state = INITIAL_STATE, action) {
