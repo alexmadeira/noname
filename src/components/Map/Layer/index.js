@@ -6,7 +6,7 @@ import { TILE_STEPS } from '~/config/Constants';
 
 import { Container } from './styles';
 
-function Tile({ sprite, position, tile, up, animate }) {
+function Layer({ sprite, position, up, animate }) {
   const [animationStap, setAnimationStap] = useState(0);
 
   const animation = useCallback(() => {
@@ -25,7 +25,7 @@ function Tile({ sprite, position, tile, up, animate }) {
 
   return (
     <Container
-      className={`${tile} ${up && 'up'} `}
+      className={up && 'up'}
       sprite={sprite}
       position={position}
       step={animationStap}
@@ -33,7 +33,7 @@ function Tile({ sprite, position, tile, up, animate }) {
   );
 }
 
-Tile.propTypes = {
+Layer.propTypes = {
   sprite: PropTypes.string.isRequired,
   position: PropTypes.oneOfType([
     PropTypes.bool.isRequired,
@@ -42,8 +42,7 @@ Tile.propTypes = {
       y: PropTypes.number.isRequired,
     }),
   ]).isRequired,
-  tile: PropTypes.string.isRequired,
   up: PropTypes.bool.isRequired,
   animate: PropTypes.bool.isRequired,
 };
-export default memo(Tile);
+export default memo(Layer);
