@@ -3,6 +3,8 @@ import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
 
+import { evento1, fim, luta } from './events';
+
 export default {
   name: 'Cidade 1',
   base,
@@ -325,6 +327,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        event: () => {
+          luta();
+        },
       },
       {
         tile: 'water',
@@ -425,7 +430,7 @@ export default {
         layers: [{ id: 0, up: false, position: false }],
       },
       {
-        tile: 'rock',
+        tile: 'water',
         passing: 2,
         layers: [{ id: 0, up: false, position: false }],
       },
@@ -450,6 +455,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        event: () => {
+          evento1();
+        },
       },
       {
         tile: 'grass01',
@@ -712,6 +720,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        event: () => {
+          fim();
+        },
       },
     ],
     [
@@ -784,6 +795,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        event: () => {
+          fim();
+        },
       },
     ],
     [
