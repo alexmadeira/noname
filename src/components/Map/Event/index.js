@@ -7,7 +7,7 @@ import { Container } from './styles';
 
 function Event({ y, x, event }) {
   const playerPosition = useSelector(state => state.walk.position);
-  console.tron.log(event);
+
   if (playerPosition.x === x && playerPosition.y === y) {
     event();
   }
