@@ -2,12 +2,14 @@ import base from '~/assets/base/glass.png';
 import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
+import bgm from '~/assets/songs/bgm/bgm2.mp3';
 
 import { evento1, Fim, luta } from './events';
 
 export default {
   name: 'Cidade 2',
   base,
+  bgm,
   sprites: [sprite1, sprite2, sprite3],
   tiles: [
     [

@@ -3,15 +3,19 @@ import { useSelector } from 'react-redux';
 
 import Event from './Event';
 import Layer from './Layer';
+import Song from './Song';
 import { Container, Row, Tile } from './styles';
 
 function Map() {
-  const { tiles, base, sprites, name } = useSelector(state => state.map.data);
+  const { tiles, base, sprites, name, bgm } = useSelector(
+    state => state.map.data
+  );
   const development = process.env.NODE_ENV === 'development';
 
   return (
     <Container base={base} className={development && 'dev'}>
       <h1>{name}</h1>
+      <Song audio={bgm} />
       {tiles.map((row, y) => (
         <Row key={Math.random().toString()}>
           {row.map(({ tile, layers, event }, x) => (

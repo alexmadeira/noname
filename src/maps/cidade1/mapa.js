@@ -2,6 +2,7 @@ import base from '~/assets/base/glass.png';
 import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
+import bgm from '~/assets/songs/bgm/bgm1.mp3';
 
 import { Evento1, Luta, Fim } from './events';
 
@@ -9,6 +10,7 @@ export default {
   name: 'Cidade 1',
   base,
   sprites: [sprite1, sprite2, sprite3],
+  bgm,
   tiles: [
     [
       {
