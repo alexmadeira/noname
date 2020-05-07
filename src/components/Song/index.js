@@ -23,7 +23,6 @@ function Song({ audio }) {
     />
   );
 }
-
 Song.propTypes = {
   audio: PropTypes.string.isRequired,
 };

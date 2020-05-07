@@ -1,9 +1,10 @@
 import React, { memo } from 'react';
 import { useSelector } from 'react-redux';
 
+import Song from '~/components/Song';
+
 import Event from './Event';
 import Layer from './Layer';
-import Song from './Song';
 import { Container, Row, Tile } from './styles';
 
 function Map() {
