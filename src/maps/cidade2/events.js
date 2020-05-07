@@ -7,10 +7,10 @@ import {
   setWalkPositionY,
 } from '~/store/modules/walk/actions';
 
-export const Evento1 = () => {
+export const evento1 = () => {
   alert('voce chegou aqui');
 };
-export const Luta = () => {
+export const luta = () => {
   alert('Luta');
 };
 
@@ -19,5 +19,5 @@ export const Fim = () => {
   dispatch(setWalkPositionX(10));
   dispatch(setWalkPositionY(10));
   dispatch(setFacing('LEFT'));
-  dispatch(setMap('cidade2'));
+  dispatch(setMap('cidade'));
 };

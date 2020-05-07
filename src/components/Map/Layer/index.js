@@ -33,6 +33,10 @@ function Layer({ sprite, position, up, animate }) {
   );
 }
 
+Layer.defaultProps = {
+  animate: false,
+};
+
 Layer.propTypes = {
   sprite: PropTypes.string.isRequired,
   position: PropTypes.oneOfType([
@@ -43,6 +47,7 @@ Layer.propTypes = {
     }),
   ]).isRequired,
   up: PropTypes.bool.isRequired,
-  animate: PropTypes.bool.isRequired,
+  animate: PropTypes.bool,
 };
+
 export default memo(Layer);

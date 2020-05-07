@@ -3,10 +3,10 @@ import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
 
-import { Evento1, Luta, Fim } from './events';
+import { evento1, Fim, luta } from './events';
 
 export default {
-  name: 'Cidade 1',
+  name: 'Cidade 2',
   base,
   sprites: [sprite1, sprite2, sprite3],
   tiles: [
@@ -328,7 +328,7 @@ export default {
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
         event: () => {
-          Luta();
+          luta();
         },
       },
       {
@@ -449,14 +449,14 @@ export default {
       {
         tile: 'water',
         passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 4, x: 3 }, animate: true }],
+        layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
         event: () => {
-          Evento1();
+          evento1();
         },
       },
       {
@@ -503,140 +503,6 @@ export default {
       {
         tile: 'water',
         passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 4, x: 0 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 1 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 2 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 1 }, animate: true }],
-      },
-    ],
-    [
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 3 }, animate: true }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 0 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 2 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 1 }, animate: true }],
-      },
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 2 }, animate: true }],
-      },
-    ],
-    [
-      {
-        tile: 'water',
-        passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 4, x: 3 }, animate: true }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
         layers: [{ id: 0, up: false, position: false }],
       },
       {
@@ -659,7 +525,141 @@ export default {
       {
         tile: 'water',
         passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 3, x: 3 }, animate: true }],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+    ],
+    [
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
+      },
+    ],
+    [
+      {
+        tile: 'water',
+        passing: 2,
+        layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
@@ -729,7 +729,7 @@ export default {
       {
         tile: 'water',
         passing: 2,
-        layers: [{ id: 0, up: false, position: { y: 4, x: 3 }, animate: true }],
+        layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',

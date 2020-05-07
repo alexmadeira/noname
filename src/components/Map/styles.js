@@ -12,6 +12,16 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   background-image: url(${props => props.base});
+  h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 312px;
+    text-align: center;
+  }
   &.dev- {
     ${Row} {
       & > div {
