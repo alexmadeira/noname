@@ -10,17 +10,22 @@ function Layer({ sprite, position, up, animate }) {
   const [animationStap, setAnimationStap] = useState(0);
 
   const animation = useCallback(() => {
-    setInterval(() => {
-      setAnimationStap(prevState =>
-        prevState + 1 < TILE_STEPS ? prevState + 1 : 0
-      );
-    }, 150);
+    setAnimationStap(prevState =>
+      prevState + 1 < TILE_STEPS ? prevState + 1 : 0
+    );
   }, []);
 
   useEffect(() => {
     if (animate) {
-      animation();
+      const animationInterval = setInterval(() => {
+        animation();
+      }, 150);
+
+      return () => {
+        clearInterval(animationInterval);
+      };
     }
+    return () => {};
   }, [animate, animation]);
 
   return (

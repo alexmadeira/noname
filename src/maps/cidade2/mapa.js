@@ -4,7 +4,7 @@ import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
 import bgm from '~/assets/songs/bgm/bgm2.mp3';
 
-import { evento1, Fim, luta } from './events';
+import { Fim } from './events';
 
 export default {
   name: 'Cidade 2',
@@ -329,9 +329,6 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
-        event: () => {
-          luta();
-        },
       },
       {
         tile: 'water',
@@ -457,9 +454,6 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
-        event: () => {
-          evento1();
-        },
       },
       {
         tile: 'grass01',
@@ -722,9 +716,7 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
-        event: () => {
-          Fim();
-        },
+        event: Fim,
       },
     ],
     [
@@ -797,9 +789,7 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
-        event: () => {
-          Fim();
-        },
+        event: Fim,
       },
     ],
     [

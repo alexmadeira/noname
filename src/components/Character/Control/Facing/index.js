@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import useEventListener from '@use-it/event-listener';
@@ -9,7 +10,7 @@ import {
   setWalkPositionY,
 } from '~/store/modules/walk/actions';
 
-export default function Facing() {
+function Facing() {
   const dispatch = useDispatch();
   const { position } = useSelector(state => state.walk);
 
@@ -66,3 +67,4 @@ export default function Facing() {
 
   return null;
 }
+export default memo(Facing);

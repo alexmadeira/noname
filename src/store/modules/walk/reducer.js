@@ -17,6 +17,10 @@ export default function walk(state = INITIAL_STATE, action) {
         draft.position = { ...draft.position, x: action.payload.x };
         break;
       }
+      case types.setTeleport: {
+        draft.teleport = action.payload.teleport;
+        break;
+      }
       default:
     }
   });

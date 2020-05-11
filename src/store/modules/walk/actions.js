@@ -13,3 +13,10 @@ export function setWalkPositionX(x) {
     payload: { x },
   };
 }
+
+export function setTeleport(teleport) {
+  return {
+    type: types.setTeleport,
+    payload: { teleport },
+  };
+}

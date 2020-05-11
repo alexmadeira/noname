@@ -1,23 +1,16 @@
-import { useDispatch } from 'react-redux';
-
-import { setFacing } from '~/store/modules/facing/actions';
-import { setMap } from '~/store/modules/map/actions';
-import {
-  setWalkPositionX,
-  setWalkPositionY,
-} from '~/store/modules/walk/actions';
-
-export const evento1 = () => {
+export const Evento1 = () => {
   alert('voce chegou aqui');
 };
-export const luta = () => {
+export const Luta = () => {
   alert('Luta');
 };
 
-export const Fim = () => {
-  const dispatch = useDispatch();
-  dispatch(setWalkPositionX(10));
-  dispatch(setWalkPositionY(10));
-  dispatch(setFacing('LEFT'));
-  dispatch(setMap('cidade'));
+export const Fim = {
+  type: 'teleport',
+  data: {
+    y: 2,
+    x: 1,
+    facing: 'DOWN',
+    map: 'cidade1',
+  },
 };

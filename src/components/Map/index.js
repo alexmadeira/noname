@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import { useSelector } from 'react-redux';
-
-import Song from '~/components/Song';
 
 import Event from './Event';
 import Layer from './Layer';
@@ -15,8 +14,9 @@ function Map() {
 
   return (
     <Container base={base} className={development && 'dev'}>
+      <ReactAudioPlayer src={bgm} autoPlay volume={0.2} />
       <h1>{name}</h1>
-      <Song audio={bgm} />
+
       {tiles.map((row, y) => (
         <Row key={Math.random().toString()}>
           {row.map(({ tile, layers, event }, x) => (
