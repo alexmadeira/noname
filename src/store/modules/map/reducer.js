@@ -4,7 +4,7 @@ import * as maps from '~/maps';
 
 import types from './types';
 
-const nome = 'cidade';
+const nome = 'cidade1';
 
 const INITIAL_STATE = { data: { ...maps[nome] } };
 

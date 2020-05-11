@@ -3,13 +3,17 @@ import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
 import bgm from '~/assets/songs/bgm/bgm2.mp3';
+import wind from '~/assets/songs/bgm/Wind.ogg';
 
 import { Fim } from './events';
 
 export default {
   name: 'Cidade 2',
   base,
-  bgm,
+  soundtrack: [
+    { name: 'cidade2', song: bgm, volume: 0.4, loop: true },
+    { name: 'wind', song: wind, volume: 0.15, loop: true },
+  ],
   sprites: [sprite1, sprite2, sprite3],
   tiles: [
     [

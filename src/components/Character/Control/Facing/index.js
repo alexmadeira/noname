@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import useEventListener from '@use-it/event-listener';
 
-import { cidade as mapa1 } from '~/maps';
 import { setFacing, facingWalk } from '~/store/modules/facing/actions';
 import {
   setWalkPositionX,
@@ -13,24 +12,25 @@ import {
 function Facing() {
   const dispatch = useDispatch();
   const { position } = useSelector(state => state.walk);
+  const map = useSelector(state => state.map.data);
 
   function walkUp() {
-    if (mapa1.tiles[position.y - 1][position.x].passing < 2) {
+    if (map.tiles[position.y - 1][position.x].passing < 2) {
       dispatch(setWalkPositionY(position.y - 1));
     }
   }
   function walkDown() {
-    if (mapa1.tiles[position.y + 1][position.x].passing < 2) {
+    if (map.tiles[position.y + 1][position.x].passing < 2) {
       dispatch(setWalkPositionY(position.y + 1));
     }
   }
   function walkLeft() {
-    if (mapa1.tiles[position.y][position.x - 1].passing < 2) {
+    if (map.tiles[position.y][position.x - 1].passing < 2) {
       dispatch(setWalkPositionX(position.x - 1));
     }
   }
   function walkRight() {
-    if (mapa1.tiles[position.y][position.x + 1].passing < 2) {
+    if (map.tiles[position.y][position.x + 1].passing < 2) {
       dispatch(setWalkPositionX(position.x + 1));
     }
   }
