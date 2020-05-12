@@ -3,6 +3,7 @@ import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
 import bgm from '~/assets/songs/bgm/bgm1.mp3';
+import passo from '~/assets/songs/bgm/step.mp3';
 import storm from '~/assets/songs/bgm/Storm2.ogg';
 
 import { Fim } from './events';
@@ -92,36 +93,57 @@ export default {
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 2 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 1 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 2 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 1 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 2 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 1 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 2 }, animate: true }],
       },
       {
@@ -166,36 +188,57 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'water',
@@ -239,6 +282,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
@@ -246,6 +292,9 @@ export default {
         layers: [
           { id: 0, up: false, position: false },
           { id: 2, up: true, position: { y: 22, x: 10 }, animate: false },
+        ],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
         ],
       },
       {
@@ -255,26 +304,41 @@ export default {
           { id: 0, up: false, position: false },
           { id: 2, up: true, position: { y: 22, x: 11 }, animate: false },
         ],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'water',
@@ -312,6 +376,9 @@ export default {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
@@ -319,6 +386,9 @@ export default {
         layers: [
           { id: 0, up: false, position: false },
           { id: 2, up: true, position: { y: 23, x: 10 }, animate: false },
+        ],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
         ],
       },
       {
@@ -328,11 +398,17 @@ export default {
           { id: 0, up: false, position: false },
           { id: 2, up: true, position: { y: 23, x: 11 }, animate: false },
         ],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'water',
@@ -384,11 +460,17 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [
           { id: 0, up: false, position: false },
           { id: 2, up: true, position: { y: 24, x: 10 }, animate: false },
@@ -405,21 +487,33 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 1, x: 0 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 1 }, animate: true }],
       },
       {
         tile: 'water',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: { y: 5, x: 1 }, animate: true }],
       },
       {
@@ -457,6 +551,9 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
@@ -478,26 +575,41 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
@@ -530,41 +642,65 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
@@ -597,46 +733,73 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
@@ -664,61 +827,97 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
         event: Fim,
       },
@@ -732,66 +931,105 @@ export default {
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
+        layers: [{ id: 0, up: false, position: false }],
+      },
+      {
+        tile: 'grass01',
+        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
         layers: [{ id: 0, up: false, position: false }],
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
       },
       {
         tile: 'grass01',
         passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
       },
       {
         tile: 'grass01',
         passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
-        layers: [{ id: 0, up: false, position: false }],
-      },
-      {
-        tile: 'grass01',
-        passing: 0,
+        soundEffect: [
+          { name: 'grassStep', song: passo, volume: 1, loop: false },
+        ],
         layers: [{ id: 0, up: false, position: false }],
         event: Fim,
       },
