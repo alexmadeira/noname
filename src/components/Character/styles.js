@@ -9,6 +9,7 @@ export const Container = styled.div`
   position: absolute;
   top: ${props => props.position.y * WALK_SPACES}px;
   left: ${props => props.position.x * WALK_SPACES}px;
+  transition: all 500ms linear;
   z-index: 10;
   &::after {
     content: '';
@@ -19,6 +20,6 @@ export const Container = styled.div`
     left: -${WALK_SPACES / 2}px;
     top: -${WALK_SPACES}px;
     height: ${SPRITE_SIZE}px;
-    width: ${SPRITE_SIZE}px;
+    width: 34px;
   }
 `;

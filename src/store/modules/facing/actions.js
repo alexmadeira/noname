@@ -6,9 +6,3 @@ export function setFacing(direction) {
     payload: { direction },
   };
 }
-
-export function facingWalk() {
-  return {
-    type: types.facingWalk,
-  };
-}

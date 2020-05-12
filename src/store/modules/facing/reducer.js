@@ -1,7 +1,5 @@
 import produce from 'immer';
 
-import { WALK_STEPS } from '~/config/Constants';
-
 import types from './types';
 
 const INITIAL_STATE = {
@@ -12,7 +10,6 @@ const INITIAL_STATE = {
     UP: 3,
   },
   direction: 'DOWN',
-  step: 0,
 };
 
 export default function facing(state = INITIAL_STATE, action) {
@@ -22,10 +19,7 @@ export default function facing(state = INITIAL_STATE, action) {
         draft.direction = action.payload.direction;
         break;
       }
-      case types.facingWalk: {
-        draft.step = draft.step > 0 ? draft.step - 1 : WALK_STEPS - 1;
-        break;
-      }
+
       default:
     }
   });

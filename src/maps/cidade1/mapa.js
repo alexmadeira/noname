@@ -2,9 +2,7 @@ import base from '~/assets/base/glass.png';
 import sprite2 from '~/assets/maps/cidade1/Outside_A2.png';
 import sprite3 from '~/assets/maps/cidade1/Outside_B.png';
 import sprite1 from '~/assets/maps/cidade1/sprite1.png';
-import bgm from '~/assets/songs/bgm/bgm1.mp3';
 import passo from '~/assets/songs/bgm/step.mp3';
-import storm from '~/assets/songs/bgm/Storm2.ogg';
 
 import { Fim } from './events';
 
@@ -13,8 +11,8 @@ export default {
   base,
   sprites: [sprite1, sprite2, sprite3],
   soundtrack: [
-    { name: 'cidade1', song: bgm, volume: 0.4, loop: true },
-    { name: 'storm', song: storm, volume: 0.15, loop: true },
+    { name: 'cidade1', song: 'bgm', volume: 0.4, loop: true },
+    { name: 'storm', song: 'storm', volume: 0.15, loop: true },
   ],
   tiles: [
     [

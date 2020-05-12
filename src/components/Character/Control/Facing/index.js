@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import useEventListener from '@use-it/event-listener';
 
-import { setFacing, facingWalk } from '~/store/modules/facing/actions';
+import { setFacing } from '~/store/modules/facing/actions';
 import {
   setWalkPositionX,
   setWalkPositionY,
@@ -41,7 +41,6 @@ function Facing() {
     const direction = key.replace('Arrow', '').toUpperCase();
 
     dispatch(setFacing(direction));
-    dispatch(facingWalk());
 
     switch (direction) {
       case 'DOWN':
